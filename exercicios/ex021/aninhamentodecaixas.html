@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font: normal lighter 1.5em 'Courier New', Courier, monospace, Arial, 'Times new roman';
+            background-color: #FAF9A6;
+            margin: 0px;
+        }
+        
+        section{
+            text-align: justify;
+            margin: 10px;
+            padding: 10px;
+            background-color: #ffffe6;
+            border-radius: 20px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.404);
+        }
+                
+        h2{
+            text-indent: 30px;
+            font-size: 1em;
+        }
+
+        p{
+            padding: 0px 10px;
+            text-indent: 30px;
+            font-size: 0.75em;
+        }
+
+        aside{
+            border-end-end-radius: 10px;
+            border-end-start-radius: 10px;
+            background-color: #ADAC42;
+            text-align: right;
+            font-size: 0.5em;
+            padding: 5px;
+        }
+        header{
+            
+            text-align: center;
+            /*background-color: #E0DE55;*/
+        }
+        header#cabecalhomenu{
+            margin-top: 0px;
+            padding-top: 10px;
+            padding-bottom: 0px;
+            width: 600px;
+            background-color: #E0DE55;
+            margin: auto;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+
+        }
+        header>h1{
+            margin: 10px 0px 0px 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 10px;
+            background-color: #616042;
+            color: aliceblue;
+            text-shadow: 2px 2px 2px rgba(229, 255, 0, 0.473);
+        }
+        nav{
+            padding: 0% 10px 10px 10px;
+            margin: 0px 10px;
+        }
+        nav>a{
+            font: bold bold 2em;
+            text-decoration: none;
+            color: #616042;
+        }
+        nav:hover>a{
+            text-decoration: underline;
+            background-color: #ADAC42;
+        }
+
+
+        article>h1{
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.521);
+            margin: 0%;
+            padding: 10px;
+            background-color: #ADAC42;
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        footer{
+            background-color: #616042;
+            margin: 0px;
+        }
+        footer>p{
+            padding: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site de Notícias</h1>
+        <header id="cabecalhomenu">
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Anuncios</a>
+                <a href="#">Cidades</a>
+                <a href="#">Contato</a>
+            </nav>
+        </header>
+    </header>
+    <main>
+        <section id="Notícias">
+            <article>
+                <h1>
+                    Notícias de hoje.
+                </h1>
+                <h2>
+                    Governador visita Monteiro
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum id, doloremque voluptatum quod asperiores eveniet soluta modi blanditiis ducimus vitae laboriosam itaque cupiditate quisquam consequuntur! Labore vitae necessitatibus doloribus dicta.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat illum minima numquam officia beatae id cumque necessitatibus nulla aliquam pariatur voluptas, expedita a facere labore debitis ad ratione vel? Vitae!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam culpa temporibus ea ullam molestias qui, odio deserunt dolorum non aperiam quo libero. Error, nostrum odio! Itaque libero cum illo tempore?
+                </p>
+                <aside>
+                    Artigo escrito por josefim.
+                </aside>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h1>
+                    Outras Notícias
+                </h1>
+                <h2>
+                    Prefeitura anuncia mudanças
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sit dolorem, eligendi hic eius earum deserunt debitis fuga blanditiis numquam esse soluta, ea ducimus at voluptatibus non itaque consequatur omnis.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore quam delectus cupiditate animi odio nisi fuga at repellat repellendus, cum totam beatae? Assumenda, saepe ullam quaerat placeat quidem sint fugit.</p>
+                <aside>
+                    Artigo escrito por josefim.
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p><strong>Desenvolvido por Flavian Alves.</strong></p>
+    </footer>
+</body>
+</html>

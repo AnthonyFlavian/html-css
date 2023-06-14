@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Músicas</title>
+</head>
+<body>
+    <h1>Reproduzindo áudio</h1>
+    <h2>Ouça os áudios do site:</h2>
+    <h2>Podcast</h2>
+    <audio src="musicas/guanacast.mp3" controls autoplay>Música Funky Rock</audio> <!--Essa é a maneira mais simples-->
+    <ul style="list-style: none;">
+        <li>
+            <h2>Rock N' Roll</h2>
+            <audio preload="metadata" autoplay controls>
+                <source src="musicas/musicap.mp3" type="audio/mpeg">
+            </audio>
+        </li>
+        <li>
+            <h2>FunkyRock</h2>
+            <audio preload="metadata" controls loop>
+                <source src="musicas/musicaf.mp3" type="audio/mpeg">
+            </audio>
+            <a href="musicas/musicaf.mp3" download="" type="audio/mpeg"><img src="imagens/logobaixar.png" alt="baixar música"></a> <!--O link para download não está funcionando não sei pq. Loop é o atributo ou parametro que recomeça o audio ao terminar-->
+        </li>
+    </ul>
+</body>
+</html>

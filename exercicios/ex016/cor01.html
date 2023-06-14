@@ -1,0 +1,47 @@
+<!--
+    ## IMPORTANTE ##
+    Você tem todo o direito de usar esse material 
+    para seu próprio aprendizado. Professores também 
+    podem ter acesso a todo o conteúdo e usá-los com 
+    seus alunos. Porém todos os que usarem esse 
+    material - seja para qual for a finalidade - deverão 
+    manter a referência ao material original, disponível 
+    em https://github.com/gustavoguanabara/html-css. Este 
+    material não poderá ser utilizado em nenhuma hipótese 
+    para ser replicada - integral ou parcialmente - 
+    por autores/editoras/instituições para criar livros 
+    ou apostilas, com finalidades de obter ganho financeiro 
+    com ele.
+-->
+
+<!DOCTYPE html>
+<!-- Nesse exercício, veremos as formas como as cores podem ser representadas em seu estilo -->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores em CSS</title>
+    <link rel="stylesheet" href="meuestilo.css">
+</head>
+<body>
+    <main>
+        <h1>Caixa destacada</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero expedita unde provident rem. Voluptates maxime delectus fuga ab consequatur eaque minima soluta, voluptatem, dicta consequuntur veniam eius quisquam dolore illum?</p>
+        <h2>Novo Texto</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse pariatur neque qui nostrum tenetur commodi voluptates labore? At magnam ipsa vitae atque, sed accusamus unde deleniti aspernatur cum quae.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia dolorum odio rem quos cupiditate sunt consequatur facilis minima consectetur a earum sapiente aperiam, sequi voluptatibus minus inventore autem perspiciatis soluta?</p>
+        <h2>Novo Texto 2</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia libero beatae tempora iusto. Eum, libero, itaque, aspernatur eveniet expedita error ipsam consequatur voluptatibus ab natus voluptate. Porro tempore cupiditate eaque.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus magnam quod, vero ipsa placeat dolorum perferendis ad quia officia similique doloribus eius labore aliquam aliquid illo debitis at natus facere?</p>
+    </main>
+    <h1>Cores em CSS</h1>
+    <p>Para entender esse exercício, olhe bem atentamente o código fonte do arquivo.</p>
+    <h2 style="background-color: darkblue; color: white;">Este título está colorido usando cores por nome</h2>
+    <h2 style="background-color: #00008b; color: #ffffff;">Já esse está usando cores pelo código Hexadecimal</h2>
+    <h2 style="background-color: rgb(0, 0, 139); color: rgb(255, 255, 255);">Este outro está colorido usando códigos RGB (red, green, blue)</h2>
+    <h2 style="background-color: hsl(240, 100%, 27%); color: hsl(0, 0%, 100%);">Este outro aqui está usando códigos HSL (hue, saturation, light)</h2>
+    <p>As cores resultantes são exatamente as mesmas, mas o formato de representação muda conforme o padrão escolhido.</p>
+    <p>Também é possível usar transparência, usando o formato RGBA (red, green, blue, alpha)</p>
+    <h2 style="background-color: rgba(0, 0, 139, 0.5); color: white;">Nesse título, o fundo azul teve sua transparência configurada para 50%</h2>
+</body>
+</html>

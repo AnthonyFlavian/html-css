@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @font-face{
+            font-family: 'Fonte do meu PC';
+            src: url(fontes/CaviarDreams.ttf) format('truetype'), url(fontes/CaviarDreams_Bold.ttf) format('truetype'), url(fontes/CaviarDreams_BoldItalic.ttf) format('truetype'), url(fontes/CaviarDreams_Italic.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }        
+        /*Sempre que tiver em pastas anteriores colocar ../ antes do nome da pasta atual ex.: ../../../pastatual/fontetal
+        
+        No caso dos formatos se usa:
+        -opentaype quando --> fonte.ott
+        -truetype quando --> fonte.ttf
+        -embbedded-opentaype quando --> ele não informou
+        -truetype-aat quando --> Apple Advanced Typography
+        -svg                
+        */
+        body{
+            font-family: 'Fonte do meu PC';
+            font-style: normal;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda maxime, mollitia distinctio quisquam veniam asperiores dolorem magni! Minima quae est suscipit placeat, odio itaque. Hic saepe labore dolorum a odio?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt laboriosam necessitatibus quo quos perferendis reiciendis, reprehenderit optio, deserunt vero facere nisi quidem culpa eos autem consectetur nostrum, repellat ipsa?</p>
+    <h2>Subtítudo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque fuga, voluptate dolores optio at sequi corrupti! Cum fugit voluptate quas itaque vitae, soluta inventore quis error enim ut ducimus quam!</p>
+</body>
+</html>

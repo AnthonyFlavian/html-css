@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+</head>
+<body>
+    <h1>Vídeos hospedados localmente</h1>
+    <p>Esse vídeo está hospedado no meu próprio servidor</p>
+    <!--<video src="videos/videomenor.mp4" width="50" controls></video> ESSA É A MANEIRA SIMPLES DE SE COLCOCAR VÍDEO-->
+    <video width="560" poster="imagens/thumbvideo.jpg" controls>
+        <source src="videos/videomenor.mp4" type="video/mp4">
+    </video>
+    <!-- é importante colocar todos os formatos aceitáveis para audio e vídeo como MP3, WMV, OGG(AUDIO) E MP4, M4V, WEBM E OGV, dentro da tag, o navegador vai executar na ordem, deixa uma mensagem ao final que o navegador não compatível, assim se nenhum video pegar o usuario receberá a mensagem, coloca na ordem do que tem tamanho menor primeiro-->
+    <a href="videos/videomenor.mp4" download="videotrabalho" type="video/mp4"><img src="imagens/logobaixar.png" alt="baixar música"></a> 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IZ_ABVyIr9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houver</title>
+    <style>
+        
+        div#mudacordetexto:hover{
+            color: aquamarine;
+        }
+        div > .menu{
+            display: none;
+        } /**Esconde o texto que tá dentro da classe menu de H1**/
+
+        div:hover > .menu{
+            display: block; /**esse é o comando que mostra o texto**/
+            background-color: rgb(255, 0, 0);
+            width: 300px;
+            color: aliceblue;
+        } /**mostra o texto que tá dentro da classe menu de H1**/
+        .menu:hover{
+            background-color: black;
+        }
+
+        div:hover{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Houver</h1>
+    <div id="mudacordetexto">Passe o mouse aqui</div>
+    <div>
+        Menu
+        <h1 class="menu">Início</h1>
+        <h1 class="menu">Músicas</h1>
+        <h1 class="menu">Contato</h1>
+        
+    </div>
+</body>
+</html>

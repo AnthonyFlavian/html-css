@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo Fixo de Tela</title>
+    <style>
+        body{
+            height: 97vh; /*para não haver perda na parte superior do corpo na janela*/
+            background-color: black;
+            background-image: url(imagens/wallpaper003.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            /*background-size: contain; (deixa a imagem sempre centralizada na tela da janela, mas com bordas escuras quando alterado o tamanho da janela*/
+            /*background-size: cover; (deixa a imagem sempre centralizada na tela da janela, sem as bordas escuras quando alterado o tamanho da janela mas corta um pouco das laterais quando necessário*/
+            background-size: cover;            
+            /*quando o conteúdo do main passa do tamanho da janela cria-se uma barra preta em baixo com uma barra de rlagem lateral, para resolver a solução está abaixo*/
+            /*background-attachment: scroll; (esse é o que fica por padrão, precisa-se colocar o repeat-y da imagem para que quando rolar role o conteúde do site com a imagem se repetindo)*/
+            /*background-attachment: local; (esse é o que fica por padrão, precisa-se colocar o repeat-y da imagem para que quando rolar role o conteúde do site com a imagem se repetindo)*/
+            background-attachment: fixed; /*esse comando combina com o cover, fazendo com que a imagem fique fixa, sem rolagem para ela, apenas para o contudo do site*/
+
+            /*Short hand de background
+            
+            color > image (url ()) > position > repeat > size > attachment
+            
+            caso não funcione tira-se o size e coloca background-size: cover; por fora.
+
+            ficaria:
+
+            background: black url('imagens/wallpaper.jpg' center center no-repeat cover fixed;)
+            */
+            
+        }
+        main{
+            max-width: 700px; /*(tamanho máximo que pode atingir o conteudo do site, para não quebrar a página)*/
+            background-color: white;
+            border: 2px solid black;
+            margin: auto;
+            border-radius: 30px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Deixando imagem de fundo centralizada na janela</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, maiores, illo minima dolor ducimus asperiores officia earum vero, dignissimos eveniet excepturi. Quod, in tempora nemo quos unde sit fugit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus quasi officiis asperiores aut cupiditate laboriosam quia nisi, quod explicabo esse qui eligendi eos perspiciatis possimus est, vero corrupti incidunt.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, maiores, illo minima dolor ducimus asperiores officia earum vero, dignissimos eveniet excepturi. Quod, in tempora nemo quos unde sit fugit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus quasi officiis asperiores aut cupiditate laboriosam quia nisi, quod explicabo esse qui eligendi eos perspiciatis possimus est, vero corrupti incidunt.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, maiores, illo minima dolor ducimus asperiores officia earum vero, dignissimos eveniet excepturi. Quod, in tempora nemo quos unde sit fugit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus quasi officiis asperiores aut cupiditate laboriosam quia nisi, quod explicabo esse qui eligendi eos perspiciatis possimus est, vero corrupti incidunt.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, maiores, illo minima dolor ducimus asperiores officia earum vero, dignissimos eveniet excepturi. Quod, in tempora nemo quos unde sit fugit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus quasi officiis asperiores aut cupiditate laboriosam quia nisi, quod explicabo esse qui eligendi eos perspiciatis possimus est, vero corrupti incidunt.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, maiores, illo minima dolor ducimus asperiores officia earum vero, dignissimos eveniet excepturi. Quod, in tempora nemo quos unde sit fugit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus quasi officiis asperiores aut cupiditate laboriosam quia nisi, quod explicabo esse qui eligendi eos perspiciatis possimus est, vero corrupti incidunt.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, maiores, illo minima dolor ducimus asperiores officia earum vero, dignissimos eveniet excepturi. Quod, in tempora nemo quos unde sit fugit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus quasi officiis asperiores aut cupiditate laboriosam quia nisi, quod explicabo esse qui eligendi eos perspiciatis possimus est, vero corrupti incidunt.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, maiores, illo minima dolor ducimus asperiores officia earum vero, dignissimos eveniet excepturi. Quod, in tempora nemo quos unde sit fugit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus quasi officiis asperiores aut cupiditate laboriosam quia nisi, quod explicabo esse qui eligendi eos perspiciatis possimus est, vero corrupti incidunt.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, maiores, illo minima dolor ducimus asperiores officia earum vero, dignissimos eveniet excepturi. Quod, in tempora nemo quos unde sit fugit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus quasi officiis asperiores aut cupiditate laboriosam quia nisi, quod explicabo esse qui eligendi eos perspiciatis possimus est, vero corrupti incidunt.
+        </p>
+    </main>
+</body>
+</html>

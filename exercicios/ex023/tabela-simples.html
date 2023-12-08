@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 600;
+            font-size: larger;
+        }
+        table{
+            width: 600px;
+            border-collapse: collapse; /*retira o espaçamento entre as celulas, usando separade, deixa uma fresta entre as celulas*/
+        }
+        td{ /*( table data) edita cada dado de cada célula separadamente */
+            padding: 5px;
+            border: 2px solid black;
+            text-align: center; /*vertical-align com os parametros top, bottom e middle(centro), alinha horizontalmente o conteúdo (dado)*/
+        }
+        .linha-marcada{
+            background-color: blueviolet;
+        }
+
+        .item-marcado{
+            background-color: yellow;
+        }
+
+        .dado-numeral{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Minha primeira tabela</h1>
+            <!--
+                HIERARQUIA DAS TABELAS
+                TABLE = tabela
+                    TABLE ROW <tr> = linha da tabela
+                        TABLE HEADER = cabeçalho da tabela
+                        TABLE DATA <td> = dados da tabela
+                    TABLE COLUMS <tc> = coluna da tabela
+                -->
+        </section>
+        <section>
+            <table>
+                <tr class="linha-marcada">
+                    <td class="item-marcado">A1</td>
+                    <td>B1</td>
+                    <td>C1</td>
+                </tr>
+                <tr>
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                </tr>
+                <tr>
+                    <td>A3</td>
+                    <td>B3</td>
+                    <td>C3</td>
+                </tr>
+                <tr>
+                    <td>A4</td>
+                    <td>B4</td>
+                    <td class="item-marcado">C4</td>
+                </tr>
+            </table>
+            <table>
+                <th>Familia</th>
+                <tr class="linha-marcada">
+                    <td>Nome</td>
+                    <td>Idade</td>
+                    <td>Grau de parentesco</td>
+                </tr>
+                <tr>
+                    <td>Flavian</td>
+                    <td class="dado-numeral">30</td>
+                    <td>Esposo</td>
+                </tr>
+                <tr>
+                    <td>Michele</td>
+                    <td class="dado-numeral">29</td>
+                    <td>Esposa</td>
+                </tr>
+                <tr>
+                    <td>Chaottinha</td>
+                    <td>8 meses</td>
+                    <td>Fiinha</td>
+                </tr>
+                
+            </table>
+        </section>
+    </main>    
+</body>
+</html>

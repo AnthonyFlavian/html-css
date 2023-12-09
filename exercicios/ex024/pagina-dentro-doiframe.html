@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tela{
+            width: 80vw;
+            margin: auto;
+            display: block;
+            justify-content: center;
+            border: 2px solid lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Colocando uma outra página dentro de um iframe
+    </h1>
+    <ul>
+        <li><a href="tabelas/tabela-completa.html" target="frame">Primeira tabela</a>
+            <!--o link abrirá uma pagina interna, e está dizendo que o invés de abrir em nova guia (_blank), o target apontará para o name="frame do iframe, criado abaixo, quando clicar no link"-->
+        <li><a href="tabelas/tabela-grande.html" target="frame">Segunda tabela</a>
+        <li><a href="tabelas/tabela-responsiva.html" target="frame">Terceira tabela</a>
+    </ul>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis aliquid adipisci nisi quos culpa iure dolores ab dicta doloribus iste omnis magnam sequi vero rem voluptatum necessitatibus, unde rerum. Eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aspernatur recusandae, quia officiis at debitis placeat ipsam unde odio aliquid velit facilis eveniet iusto harum deserunt id, saepe, eos exercitationem.
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae accusamus ea quia voluptatum quasi id temporibus voluptate hic nemo! Autem modi harum adipisci illum quas ratione eius architecto deleniti magni?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, et debitis temporibus suscipit soluta quam quidem in? Error beatae minus earum commodi eius aliquid ipsum. Distinctio accusamus eum beatae natus.
+    </p>
+    <iframe id="tela" src="" name="frame"></iframe>
+    <!--O id tela é apenas para personalizar o iframe no css, a propriedade name="frame, é o nome do iframe, onde será usado para que o target do link, aponte para o iframe, por exemplo, ao invez de abrir o link num _blanck (nova gui do navegador), coloca target="frame", fazendo com que o link abra dentro do iframe que tem o name="frame"-->
+</body>
+</html>

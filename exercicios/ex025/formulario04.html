@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO EMAIL E TELEFONE</title>
+</head>
+<body>
+    <h1>
+        Formulario com datas
+    </h1>
+    <form action="algum-bd.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="ifone">Telefone:</label>
+                    <input type="tel" name="fone" id="ifone" required placeholder="Ex.: (xx)xxxxx-xxxx" parttern="^\(\d{2}\)\d{4,5}-\d{4,5}$">
+            </p>
+            <!--Expressões regulares "REGEX" são expressões para definir como deve ser aceito
+            a entrada de dados em alguns inputs, como telefone, detro do atributo pattern
+            -fica sempre entre>>> ^$    (entre aspas claro)
+            -para dizer que vai aceitar dois numeros entre parenteses usa>>> \(conteudoaqui\)
+            -para dizer que vai ler digitos usa>>> \d ou [0-9]
+            -para dizer a quantidade de digitos>>> \d{4,5}-\d{4,5}   (isso fala que sera 4 digitos,
+            depois um traço e depois mais 4 digitos (entre 4  e 5 digitos na vdd p os dois))
+            ficando assim: parttern="^\(\d{2}\)\d{4,5}-{4,5}$"
+            -->
+            <p>
+                <label for="imail">E-email:</label>
+                    <input type="email" name="mail" id="imail" required placeholder="seuemail@algummail.com">
+            </p>
+        </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+            </p>
+
+
+    </form>
+</body>
+</html>

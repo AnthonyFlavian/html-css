@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOR, RANGE E FILE</title>
+</head>
+<body>
+    <form action="link do script em js ou php" method="post">
+        <fieldset> <!--DEIXA O TEXTO DENTRO DE UM BLOCO DE FORMULARIO-->
+            <legend> <!--LEGENDA QUE FICA NA BORDA DO BLOCO-->
+                TESTE
+            </legend>
+            <input type="color" name="cor" id="icor" value="#f05500"><label for="icor"></label> <br> 
+            <!--Coloca uma paleta de cores para o usuario selecionar uma cor-->
+            <input type="range" name="satis" id="isatis" min="0" max="5" value="3"><label for="isatis">Nível de satisfação</label>
+            <!--no máximo coloca o máximo que a barrinha vai, o padrão é de 0 a 100-->
+            <input type="file" name="arq" id="iarq">
+            <!--para ser possível enviar algum arquivo o METHOD no FORM tem que estar post
+            se fica padrão (o mesmo que get), da erro pois só aceita 3000 bytes e foto, video
+            e musica tem muito mais que 3000 bytes
+            o input TYPE image é para o desenvolvedor enviar um arquivo de imagem.-->
+        </fieldset>
+    </form>
+</body>
+</html>

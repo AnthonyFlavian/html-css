@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="dados-user.php" method="post" autocomplete="off">
+        <!--Action define para onde vão os dados do formulário-->
+        <!--Method é o tipo de método para envio das info, get é o padrão, 
+        mas nesse método aparece na barra de endereço os dados, post "esconde"
+        de maneira mais prática, mas o correto mesmo é usar o https(mais avançado).-->
+        <!--autocomplete tira ou coloca para o navegador sugerir dados salvos no cookie
+        com on e off, na caixa de texto do input-->
+        <p>
+            <label for="inome">Nome:</label> <input type="text" name="nome" id="inome">
+            <!--label etique associando o input o texto que antecede, o nome é pegado mais
+            pelo sistema php e o i pelo sistema JScript-->
+            <label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>

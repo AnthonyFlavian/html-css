@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de login</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="algum-script.php" method="post" autocomplete="on">
+        <h1>Login</h1>
+        <p>
+            <label for="iuser">Usuário:</label>
+            <input type="text" name="user" id="iuser" required autocomplete="username" minlength="5" maxlength="15" placeholder="Digite o usuário">
+
+            <!--REQUIRED faz com que os botões só funcionem se tiver algo digitado na caixa-->
+            <!--AUTOCOMPLETE username/password SÓ FUNCIONA SE AUTOCOMPLETE TIVER on NO FORM-->
+            <!--min e maxlength determina a quantidade exigida de caracteres nas caixas-->
+            <!--PLACEHOLDER coloca um texto sugestivo dentro das caixas-->
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required autocomplete="current-password" minlength="8" maxlength="20" placeholder="Senha no mínimo 8 dígitos">
+
+        </p>
+        <p><input type="submit" value="Enviar">
+        <input type="reset" value="Limpar"></p>
+        <!--o atributo RESET limpa o conteúdo digitado-->
+        
+    </form>
+</body>
+</html>

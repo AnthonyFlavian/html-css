@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECKBOX e RADIO</title>
+</head>
+<body>
+    <form action="link do script em js ou php" >
+        <fieldset> <!--DEIXA O TEXTO DENTRO DE UM BLOCO DE FORMULARIO-->
+            <legend> <!--LEGENDA QUE FICA NA BORDA DO BLOCO-->
+                Sexo
+            </legend>
+            <input type="radio" name="sexo" id="isexmasc" value="M"><label for="isexmasc" >Masculino</label> <br> 
+            <!--Radio tem que ter o NAME IGUAL e o ID DIFERENTE, assim nao ficam os
+            dois iguais, dessa manera alterna, ou um ou o outro-->
+            <input type="radio" name="sexo" id="isexfem" value="M"><label for="isexfem" >Feminino</label>
+            <!--É IMPORTANTE COLOCAR O VALUE POIS QUANDO MARCADO O RADIO, ENVIA
+            PARA O BANCO DE DADOS QUAL OPÇÃO FOI ESCOLHIDA-->
+            
+        </fieldset>
+        <fieldset>
+            <legend>
+                Esporte favorito
+            </legend>
+            <input type="checkbox" name="fut" id="ifut"><label for="ifut">Futebol</label><br>
+            <!--NO CHECKBOX PODE SE ESCOLHER VARIAS OPÇÕES-->
+            <input type="checkbox" name="basq" id="ibasq"><label for="ibasq">Basket</label>
+        </fieldset>
+
+    </form>
+</body>
+</html>

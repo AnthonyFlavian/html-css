@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECT, DATALIST E TEXTAREA</title>
+</head>
+<body>
+    <form action="" method="post">
+
+        <p>
+            <label for="iest">Selecione o estado</label>
+            <select name="est" id="iest">
+
+                <option value="" selected>--Escolha--</option>
+                <!--o selected deixa essa opção como a primeira a aparecer-->
+                <optgroup label="Região Nordeste">
+                    <!--esse label é um atributo, diferente do anterior que é um elemento-->
+                    <option value="PB" >Paraíba</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+                <optgroup label="Região Norte">
+                    
+                    <option value="AM">Amazonas</option>
+                    <option value="RO">Rondonia</option>
+                    <option value="AC">Acre</option>
+                </optgroup>
+
+            </select>
+            
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lista">
+            <!--o atributo lista aponta para o id do datalist-->
+            <!--o datalist permite colcoar uma lista de opções dentro de uma caixa
+            de texto-->
+            <datalist id="lista">
+                <!--é necessário criar um id para o datalist para apontar do input-->
+                <option>Professor</option>
+                <option>Dentista</option>
+            </datalist>
+
+        </p>
+        <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
+        <!--cria uma caixa grande de texto onde se controla a quantidade de colunas e linhas
+        precisa o method ser POST no <form>-->
+
+
+
+
+    </form>
+</body>
+</html>

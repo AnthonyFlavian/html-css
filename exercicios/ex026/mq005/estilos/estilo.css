@@ -1,7 +1,78 @@
 @charset "UTF-8";
-
+/*Mobile first (codigo primeiro para dispositivo movel)*/
 *{
-
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
 }
 
+body, html{
+    background-color: lightgray;
+
+}
+
+header{
+    background-color: gray;
+}
+
+menu{
+    display: none;
+}
+
+header h1{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+span#botao-menu{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+span#botao-menu:hover{
+    background-color: white;
+    color: black;
+}
+header > menu > ul{
+    background-color: rgb(104, 104, 104);
+    text-align: center;
+}
+
+header > menu > ul > li> a{
+    display: block;
+    border-top: 2px solid gray;
+    color: lightgray;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+}
+
+header a:hover{
+    background-color: gray;
+
+}
+
+main{
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 80vw;
+
+}
+
+main h2{
+    text-align: center;
+    padding: 20px;
+}
+
+main p{
+    padding: 20px;
+    text-align: justify;
+    line-height: 20px;
+    text-indent: 20px;
+}

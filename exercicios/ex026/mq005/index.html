@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="estilos/estilo.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link rel="stylesheet" href="estilos/media-grande.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>
             Meu site
@@ -42,6 +43,14 @@
         </article>
     </main>
     <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                menusite.style.display = 'block'
+            } else{
+                menusite.style.display = "none"
+            }
+        }
+
         function clickmenu(){
             if (menusite.style.display == 'block'){
                 menusite.style.display = 'none'

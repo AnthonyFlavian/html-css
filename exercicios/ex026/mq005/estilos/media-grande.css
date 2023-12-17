@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*TAMANHO PADRÃO DE TELAS DOS DIVERSOS DISPOSITIVOS
+
+-PEQUENAS TELAS ATÉ MAX-WIDTH: 600PX (GERALMENTE USA-SE MIN-WIDTH 600PX E MAX-WIDTH 768PX
+-CELULAR DE MIN-WIDTH 600PX ATE MAX-WIDTH 768PX
+-TABLET MIN-WIDTH 768PX ATE MAX-WIDTH 992PX
+-DESKTOP MIN-WIDTH 992PX E MAX-WIDTH 1200PX
+-TVS(GRANDES TELAS) A PARTIR DE 1200PX 
+*/
+
+@media screen and (min-width: 768px) {
+    span#botao-menu{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    menu > ul > li{
+        padding: 0 5px;
+
+        display: inline-block;
+    }
+
+    header > menu > ul > li> a{
+        background-color: gray;
+        border-top: 5px solid rgb(104, 104, 104);
+    }
+
+    header > menu > ul > li> a:hover{
+        background-color: rgb(104, 104, 104);
+    }
+
+    main{
+        width: 768px;
+    }
+}
